@@ -3,10 +3,10 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+first_name: Rajeev
+middle_name: 
+last_name: Verma
+email: rajeev.ee15@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 footer_text: >
@@ -100,11 +100,11 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
+  # projects:
+    # output: true
+    # permalink: /projects/:path/
 
-news_limit: 5
+news_limit: 3
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
