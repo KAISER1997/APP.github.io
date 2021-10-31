@@ -1,7 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2021-04-01
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+Our MLRC reproducibility report was accepted to appear in ReScience Journal. Check it [here](http://rescience.github.io/bibliography/Verma_2021.html).
+
