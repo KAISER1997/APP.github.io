@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Master's Student [University of Amsterdam](https://www.uva.nl/en)
+description: Master's Student @ University of Amsterdam
 profile:
   align: right
   image: prof_pic.jpg
