@@ -4,4 +4,4 @@ date: 2021-11-01
 inline: true
 ---
 
-Started as ML/NLP researcher at [CACTUS Communications](https://cactusglobal.com/) to research on peer-review quality. Researching on Reviewer Miscalibration, Reviewer Misinformation, and Review Text Moderation.
+Started as ML/NLP researcher at [CACTUS Communications](https://cactusglobal.com/). 
