@@ -8,10 +8,22 @@ The goal of decision making is to take an optimal decision according to some opt
 
 **Setting:** We assume a finite set of all the decisions available to the decision maker. Denote this set by $$\mathcal{D}$$, and the decision maker aims to take some decision $$d$$ from $$\mathcal{D}$$. In the skin lesion diagnosis setting, a doctor has to decide whether the lesion is benign $$(d_{1})$$ or cancerous $$(d_{2})$$. A doctor may also choose to refer to a senior doctor $$(d_{3})$$, or refer to a psychatrist $$(d_{4})$$. Thus, $$\mathcal{D} = \{d_{1}, d_{2}, d_{3}, d_{4}\}$$. 
 
-Of course, there are consequences of taking some decision $$d$$. We model consequence by attaching costs to each decision. A lesion could be cancerous, and the doctor may decide to label it as benign. This decision comes with a high cost. To model consequences of decision, we associate with each decision a random variable $$J_{d_{i}}: \mathcal{X} \rightarrow \mathbb{R}$$. $$\mathcal{X}$$ is our possibility space, and the outcome $$x \in \mathcal{X}$$ is uncertain. For example, $$\mathcal{X} = \{\text{benign}, \text{cancerous}\}$$ for our running example. And $$J_{d_{1}}(x)$$ is very high when $$x = \text{cancerous}$$. So, how do we take an optimal decision with uncertainties on $$x \in \mathcal{X}$$?
+Of course, there are consequences of taking some decision $$d$$. We model consequence by attaching costs to each decision. A lesion could be cancerous, and the doctor may decide to label it as benign. This decision comes with a high cost. To model consequences of decision, we associate with each decision a random variable $$J_{d_{i}}: \mathcal{X} \rightarrow \mathbb{R}$$. $$\mathcal{X}$$ is our possibility space, and the outcome $$x \in \mathcal{X}$$ is uncertain. For example, $$\mathcal{X} = \{\text{benign}, \text{cancerous}\}$$ for our running example. And $$J_{d_{1}}(x)$$ is very high when $$x = \text{cancerous}$$. So, how do we take an optimal decision $$d_{\text{opt}}$$ with uncertainties on $$x \in \mathcal{X}$$?
 
-**Minimum Expected Cost Model:** A classical approach from probability theory for the above question is taking the decision with minimum expected cost. One consider a probability measure space $$(\mathcal{X}, \mathcal{F}, \mu)$$ to model beliefs about an uncertain outcome $$x \in \mathcal{X}$$. $$\mu$$ is a probability measure on the $$\sigma-\text{algebra}$$  $$\mathcal{F}$$ of $$\mathcal{X}$$. We consider $$\mathcal{F}$$ large enough that each $$J_{d_{i}}$$ is a measurable function w.r.t. $$\mathcal{F}$$. In such a setting, one can assign an expectation to each $$J_{d_{i}}$$ w.r.t. to the measure $$\mu$$ as defined below:
+**Minimum Expected Cost Framework:** A classical approach from probability theory for the above question is taking the decision with minimum expected cost. One consider a probability measure space $$(\mathcal{X}, \mathcal{F}, \mu)$$ to model beliefs about an uncertain outcome $$x \in \mathcal{X}$$. $$\mu$$ is a probability measure on the $$\sigma-\text{algebra}$$  $$\mathcal{F}$$ on $$\mathcal{X}$$. We consider $$\mathcal{F}$$ large enough that each $$J_{d_{i}}$$ is a measurable function w.r.t. $$\mathcal{F}$$. One can now take an expectation to each $$J_{d_{i}}$$ w.r.t. to the measure $$\mu$$ as defined below:
 
 $$
-	\mathbb{E}[J_{d_{i}}] = \int J_{d_{i}} d_{\mu}
+	\mathbb{E}[J_{d_{i}}] = \int J_{d_{i}} d\mu
 $$ 
+
+The minimum expected cost model for decision making then says to take the decision with that minimise $$\mathbb{E}[J_{d_{i}}]$$, i.e.
+
+$$
+	d_{\text{opt}} \in \arg \min_{d \in \mathcal{D}}\mathbb{E}[J_{d}]
+$$
+
+Note: A minimum expected cost framework for decision making says to take the decision with the minimum expected cost. It is presented in a slightly complicated way here just to elucidate the complexity of this framework.  
+
+**Limitations of the Minimum Expected Cost Framework:** The goal of this post is to highlight the limitations of the above approach. To say in simple terms, the minimum expected cost framework is asking for too much. It asks for a well-defined probability measure $$\mu$$ on a well-defined measurable space. In many practical situations, it is unreasonable to come up with those to a precise degree. In our medical setting, assigning a well-defined measure $$\mu$$ to the outcome of the diagnosis is non-trivial. This results simply because we might not have full information, or very well can have vague or imprecise information. Thus, we cannot precisely assign $$\mu(F)$$ to every $$F \in \mathcal{F}$$. If we use minimum expected cost framework to arrive at an optimal decision, we get very unreliable decision as the following example shows.
+
+**Example:**
