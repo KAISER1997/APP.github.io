@@ -35,4 +35,3 @@ $$J_{d_{4}}(\text{benign}) = 0.1, J_{d_{4}}(\text{cancerous}) = 0.8$$
 
 And we assume to have only incomplete information about the underlying $$\mu$$. Consider that we know the probability of the skin lesion being cancerous is between $$0.2$$ and $$0.5$$, i.e. $$0.2 \leq \mu(\text{cancerous}) \leq 0.5$$. 
 
-{% include figure.html path="assets/img/uncertainty.png" class="img-fluid rounded z-depth-1" %}
