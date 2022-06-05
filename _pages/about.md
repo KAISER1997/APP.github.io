@@ -5,7 +5,7 @@ permalink: /
 description: Master's Student @ University of Amsterdam
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic2.png
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
