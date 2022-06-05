@@ -29,9 +29,15 @@ Note: A minimum expected cost framework for decision making says to take the dec
 **Example:** In our example of skin lesion diagnosis, assume the following costs are associated to each decision based on the outcome $$x \in \mathcal{X}$$.
 
 $$J_{d_{1}}(\text{benign}) = 0, J_{d_{1}}(\text{cancerous}) = 1$$
+
 $$J_{d_{2}}(\text{benign}) = 0.7, J_{d_{2}}(\text{cancerous}) = 0$$
+
 $$J_{d_{3}}(\text{benign}) = 0.5, J_{d_{3}}(\text{cancerous}) = 0.2$$
+
 $$J_{d_{4}}(\text{benign}) = 0.1, J_{d_{4}}(\text{cancerous}) = 0.8$$
 
-And we assume to have only incomplete information about the underlying $$\mu$$. Consider that we know the probability of the skin lesion being cancerous is between $$0.2$$ and $$0.5$$, i.e. $$0.2 \leq \mu(\text{cancerous}) \leq 0.5$$. 
+And we assume to have only incomplete information about the underlying $$\mu$$. Consider that we know the probability of the skin lesion being cancerous is between $$0.25$$ and $$0.70$$, i.e. $$0.25 \leq \mu(\text{cancerous}) \leq 0.70$$. 
+
+
+{% include figure.html path="assets/img/prof_pic.jpg" class="img-fluid rounded z-depth-1" %}
 
