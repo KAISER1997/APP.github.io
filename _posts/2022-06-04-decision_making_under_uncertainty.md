@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Decision Making Under Uncertainty-Part 1
+title: Decision Making under Uncertainty-Part 1
 date: 2022-06-04
 description: motivating the need for imprecise probabilities
 ---
