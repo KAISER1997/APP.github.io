@@ -11,6 +11,8 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+*"If we knew what it was we were doing, it would not be called research, would it?"--- Albert Einstein*
+
 
 Hello! I am currently a second year master's student supervised by [Eric Nalisnick](https://enalisnick.github.io/).
 Previously, I studied Electrical Engineering at the [Indian Institute of Technology Patna (IITP)](https://www.iitp.ac.in/index.php/en-us/). I was also affiliated with the [AI-NLP-ML lab](https://www.iitp.ac.in/~ai-nlp-ml/) while at IITP.
