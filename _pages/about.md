@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: Master's Student @ University of Amsterdam
+description: Incoming PhD Candidate at [Delta Lab](https://ivi.fnwi.uva.nl/uvaboschdeltalab/)/ AMLab (http://amlab.science.uva.nl/)
 profile:
   align: right
   image: prof_pic2.jpg
